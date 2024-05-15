@@ -1,0 +1,119 @@
+.stacks {
+    background: #7a7a7a21;
+    backdrop-filter: blur(3px);
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(11, 11, 17, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 10px;
+    z-index: 1000;
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+  }
+  .skill__title {
+    color: white;
+    font-size: 60px;
+    margin-left: 130px;
+    margin-bottom: 130px;
+    max-width: 800px;
+    margin-top: 50px;
+  }
+  #mid__stack {
+    transform: translateY(100px);
+  }
+  
+  .stack__con {
+    display: flex;
+    gap: 30px;
+  }
+  .stack__inner__con {
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .home__skills__con {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .stacks img {
+    width: 48px;
+    margin-bottom: 20px;
+  }
+  .logo__name {
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .path__image {
+    transform: rotate(-80deg);
+  }
+  
+  .stack__con div:nth-child(4) {
+    transform: translateY(-100px);
+  }
+  .stack__con div:nth-child(5) {
+    transform: translateY(-200px);
+  }
+  .stacks:hover {
+    scale: 1.1;
+  }
+  .dottedline {
+    border: 4px dotted white;
+    width: 0.5px;
+    height: 100px;
+  }
+  
+  
+  @media (max-width:1000px) {
+
+     .skill__title {
+ 
+    font-size: 30px;
+    margin-left: 0;
+    text-align: center;
+   
+  }
+  .stack__inner__con {
+    
+    flex-direction: row;
+  
+  }
+  .stack__con {
+    display: block;
+  
+  }
+  .stack__con div:nth-child(4) {
+    transform: translateY(0);
+  }
+  .stack__con div:nth-child(5) {
+    transform: translateY(0);
+  }
+  #mid__stack {
+    transform: translateY(0);
+    display: flex;
+    justify-content: center;
+  }
+  .stacks{
+    margin-bottom: 30px;
+  }
+  }
+  @media (max-width:400px) {
+    .stacks{
+      width: 100px;
+      height: 100px;
+    }
+    .skill__title{
+      font-size: 15px;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }

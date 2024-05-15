@@ -1,0 +1,87 @@
+
+.about__me__con{
+ margin-top: 200px;
+ display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+
+
+.about__me__details{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.about-me-intro{
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    width:50%;
+    margin-bottom: 70px;
+    line-height:2.5rem;
+}
+
+.about-me-intro a{
+    color: red;
+    border-bottom: white;
+}
+
+.about__me__header{
+    /* font-size: 40px;
+    font-size: 30px;
+    text-transform:uppercase;
+    
+    color: #ffff;
+    font-weight: 900; */
+    font-size: 50px;
+    font-family: "Ogg TRIAL";
+  
+    background: linear-gradient(to right, #e0e0e0, #747474, #e0e0e0);
+    color: transparent;
+    background-clip:text ;
+    animation-name: movingcolor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    text-transform: capitalize;
+}
+@keyframes movingcolor {
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 1000px;
+    }
+}
+
+
+@media (max-width:1000px) {
+   .about__me__con{
+    flex-direction: column;
+   }
+    .about-me-intro{
+        font-size: 15px;
+        width: 90%;
+        text-align: center;
+    }
+    .about__me__header{
+        font-size: 20px;
+    }
+}
+@media (max-width:400px) {
+    .about__me__con{
+     flex-direction: column;
+    }
+     .about-me-intro{
+         font-size: 10px;
+         width: 80%;
+         text-align: center;
+     }
+     .about__me__header{
+         font-size: 20px;
+     }
+ }

@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: "HK Grotesk";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.app__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  /* display: grid; */
+  /* grid-template-columns: repeat(10, 1fr); */
+  /* opacity: .5; */
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.app__background > div {
+  /* background: red; */
+  /* display: block;
+  color: #fff;
+  transform: translate(50%, 0); */
+
+  /* height: 100vh; */
+  height: fit-content;
+  width: 2px;
+  background-color: rgba(149, 149, 149, 0.059);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.app__background > div:nth-child(even) > span {
+  margin-top: 200px;
+  margin-bottom: 20vh;
+
+}
+
+.app__background > div span {
+  display: block;
+  height: 3px;
+  width: 3px;
+  background: #758a97;
+  border-radius: 100vh;
+  margin-top: 70px;
+  margin-bottom: 34vh;
+  flex-shrink: 0;
+}
+.app__background-img{
+  background-image: url("../public/images/busola.png");
+  width: 100vh!important;
+  height: 400vh !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  opacity: 0.07;
+
+
+}
+
+@media (max-width:800px) {
+
+  .app__background-img{
+    width: 100%;
+  
+  }
+  .app__background {
+    position:sa;
+    top: 0;
+    left: 0;
+    height: 150vh;
+    width:100vw;
+  }
+}
