@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Hero.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import HorizontalScroll from "../components/Horizontalscroll";
 import Workproject from "../components/Workproject";
 
@@ -14,17 +14,17 @@ const Hero = () => {
   return (
     <>
       <div className="home__nav">
-        <a>Busola.</a>
+        <Link to='/'>Busola.</Link>
 
         <ul className={` ${isOpen ? "open" : ""}`}>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="mailto:badejoadebusola@gmail.com">Contact</NavLink>
           </li>
           <li>
-            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="https://drive.google.com/file/d/1S8pi1qOpzqobLnJ_9U27agjheZY5j7AK/view?usp=sharing">Resume</NavLink>
           </li>
           <li>
-            <NavLink to="/about-us">About Me</NavLink>
+            <NavLink to="https://github.com/adebusola-webdev">Github</NavLink>
           </li>
 
           <div className="dropdown">

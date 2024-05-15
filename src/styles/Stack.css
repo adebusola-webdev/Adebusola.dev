@@ -112,8 +112,27 @@
       height: 100px;
     }
     .skill__title{
+      font-size: 30px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .home__skills {
+      margin-bottom: 40px;
+   ;
+    }
+    .skill__title{
+      margin-top: 70px;
+    }
+  }
+  @media (max-width:300px) {
+
+    .stacks{
+      width: 80px;
+      height: 180px;
+    }
+    .skill__title{
       font-size: 15px;
-      max-width: 200px;
+      max-width: 400px;
       margin: 0 auto;
     }
   }

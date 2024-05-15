@@ -211,13 +211,17 @@
  .project__con__header{
      font-size: 20px;
  }
+ .image-con{
+  display: flex;
+  gap: 10px;
+}
  .image{
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 .image:nth-child(2){
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 .image h2{
   font-size: 90px;

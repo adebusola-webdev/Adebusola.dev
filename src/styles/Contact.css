@@ -26,21 +26,22 @@
 }
 .contact span{
     opacity: 0;
-    display: inline-block;
+    /* display: inline-block; */
     
 }
 .contact span:first-child{
-    transform: translate(-15px, 20px) rotate(-15deg);
+   
     animation-name: first;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-delay: 0.25s;
  
+   opacity: 0;
     
 
 }
 .contact span:nth-child(2){
-    transform: translate(-15px, 20px) rotate(-15deg);
+   
     animation-name: first;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -48,7 +49,7 @@
    opacity: 0;
 }
 .contact span:nth-child(3){
-    transform: translate(-15px, 20px) rotate(-15deg);
+    
     animation-name: first;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -56,7 +57,6 @@
    opacity: 0;
 }
 .contact span:nth-child(4){
-    transform: translate(-15px, 20px) rotate(-15deg);
     animation-name: first;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -64,7 +64,7 @@
    opacity: 0;
 }
 .contact span:nth-child(5){
-    transform: translate(-15px, 20px) rotate(-15deg);
+    
     animation-name: first;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -72,7 +72,7 @@
    opacity: 0;
 }
 .contact span:nth-child(6){
-    transform: translate(-15px, 20px) rotate(-15deg);
+   
     animation-name: first;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -80,7 +80,7 @@
    opacity: 0;
 }
 .contact span:nth-child(7){
-    transform: translate(-15px, 20px) rotate(-15deg);
+  
     animation-name: first;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -88,7 +88,7 @@
    opacity: 0;
 }
 .contact span:nth-child(8){
-    transform: translate(-15px, 20px) rotate(-15deg);
+   
     animation-name: first;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -96,7 +96,7 @@
    opacity: 0;
 }
 .contact span:nth-child(9){
-    transform: translate(-15px, 20px) rotate(-15deg);
+   
     animation-name: first;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -118,18 +118,24 @@
 .social_media_contact_con{
     display: flex;
     color: white;
-    justify-content: space-around;
-    margin-top: 150px;
+    /* justify-content: space-around; */
+    /* margin-top: 150px; */
+
 }
 .social__media__list{
     display: flex;
-    gap: 50px;
+    gap: 10px;
+    color: white;
+   
 }
 .mLink{
   color:black;
   border-bottom: solid 1px white;
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: 100px;
+  border: red 1px solid;
+  opacity: 0;
+  pointer-events: none
 
 }
 
@@ -147,12 +153,25 @@
         align-items: center;
         gap: 30px;
     }
-    .media_list a{
+    .mLink{
         font-size: 15px;
     }
 }
 @media (max-width:400px) {
     .contact{
         font-size: 20px;
+    }
+    .contactme__con{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 60px;
+    }
+}
+@media (max-width:400px) {
+    .contact{
+        font-size: 10px;
     }
 }

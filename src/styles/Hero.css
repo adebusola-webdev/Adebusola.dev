@@ -4,7 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  /* border: 1px solid red; */
+ 
 }
 
 button {
@@ -232,7 +232,8 @@ body {
 }
 .colors{
   display: inline-block;
-  background-color: red;
+   background-color:#16324f;
+    
   flex: 1;
   transition: 0.25s; 
   
@@ -317,7 +318,7 @@ transition-delay: .6s;
 @media (max-width:600px) {
  
   .home__hero{
-    font-size: 15px;
+    font-size: 30px;
     justify-content: center;
     text-align: center;
     padding: 20px 10px;
@@ -326,5 +327,38 @@ transition-delay: .6s;
     padding: 20px 20px;
   }
   
+  
+}
+@media (max-width:400px) {
+ 
+  .home__hero{
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  .home__nav{
+    padding: 20px 20px;
+  }
+  .open{
+    font-size: 40px;
+  }
+  
+  
+}
+@media (max-width:300px) {
+ 
+  .home__hero{
+    font-size: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  .home__nav{
+    padding: 20px 20px;
+  }
+  .open{
+    font-size: 40px;
+  }
   
 }

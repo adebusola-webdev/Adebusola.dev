@@ -8,7 +8,7 @@ import HorizontalScroll from "../components/Horizontalscroll";
 const Works = () => {
   return (
     <HorizontalScroll>
-      <div className="projects__section">
+      <div className="projects__section" id="projects">
         <div className="project__con">
           <p className="project__con__header">projects- </p>
           <Link to="https://flutterclone.vercel.app">

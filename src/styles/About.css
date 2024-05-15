@@ -27,8 +27,9 @@ justify-content: space-around;
 }
 
 .about-me-intro a{
-    color: red;
+    color:#16324f;
     border-bottom: white;
+    text-decoration: underline;
 }
 
 .about__me__header{
@@ -66,7 +67,8 @@ justify-content: space-around;
     .about-me-intro{
         font-size: 15px;
         width: 90%;
-        text-align: center;
+         text-align: center; 
+        margin: 0 auto;
     }
     .about__me__header{
         font-size: 20px;
@@ -74,14 +76,24 @@ justify-content: space-around;
 }
 @media (max-width:400px) {
     .about__me__con{
+        margin-top: 50px;
+       
+       
+       }
+    .about__me__con{
      flex-direction: column;
     }
      .about-me-intro{
-         font-size: 10px;
-         width: 80%;
+         font-size: 15px;
+         width: 90%;
          text-align: center;
+         margin: 0 auto;
+         margin-bottom: 60px;
+         line-height:1.5rem;
      }
      .about__me__header{
          font-size: 20px;
+         margin-top: 20px;
      }
+    
  }

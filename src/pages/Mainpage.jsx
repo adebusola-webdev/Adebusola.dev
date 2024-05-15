@@ -8,21 +8,23 @@ import Experiences from "./Experiences";
 import Contact from './Contact';
 import Stacks from "./Stacks";
 
+
 const Mainpage = () => {
   return (
     <>
-      <LayoutBackground />
+      {/* <LayoutBackground /> */}
     
-      <Hero />
-      <Works /> 
-      <Stacks/>
+       <Hero /> 
+       <Works />  
+       <Stacks/> 
     
-      <About />
-      {/* <Experiences/> */}
-      <Contact/>
+      <About /> 
+       {/* <Experiences/>  */}
+       <Contact/> 
     
       {/* <Build />
         */}
+       
     </>
   );
 };
